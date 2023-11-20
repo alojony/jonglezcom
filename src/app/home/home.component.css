@@ -1,0 +1,94 @@
+/* Your CSS file, e.g., banner.component.css */
+.container {
+    padding:100px 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .banner-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 42px;
+line-height: 1.5;
+  }
+  
+  .banner-button {
+    padding: 30px 60px;
+    border: teal;
+    border-radius: 12px;
+    font-size: 36px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: orange;
+    --c: #229091; /* the color*/
+    box-shadow: 0 0 0 .1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p, 0%)) 0%,
+      var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  
+  .banner-button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    color: #fff;
+  }
+  
+  .banner-button:active {
+    box-shadow: 0 0 9e9q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+  }
+  
+  .typewriter-banner {
+    order: 2;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: 80px;
+  }
+  
+  .typewriter-container {
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+    white-space: nowrap;
+    margin: 0 auto;
+line-height: 1.5;
+    font-size: 120px;
+    text-align: right; /* Align text to the right */
+  }
+  
+  .typed-text {
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000;
+
+line-height: 1.5;
+    font-size: 120px;
+    animation: typing 3s steps(40, end), blink-caret 1s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
+ 
+
