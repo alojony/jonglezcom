@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    
+}
+
+.container {
+    padding: 55px;
+    margin: 10px;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    color: #000;
+}
+
+
+ .column b {
+    color: teal;
+    font-size: 12pt;
+ }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}

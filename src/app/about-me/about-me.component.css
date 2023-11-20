@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.column {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #333;
+}
+
+.left-column {
+    max-width: 50%;
+    height: auto;
+    padding: 75px 75px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    /* align-content: right; */
+}
+
+.right-column {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #333;
+}
+
+.picture-container {
+    position: relative;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.picture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    /* background: rgba(255, 255, 255, 0.8); */
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.button-container {
+    align-content: right;
+    text-align: right;
+}
+
+button {
+    padding: 20px 40px;
+    border: teal;
+    border-radius: 12px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: orange;
+    --c: #229091; /* the color*/
+    box-shadow: 0 0 0 .1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p, 0%)) 0%,
+      var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    color: #fff;
+  }
+  
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+  }
