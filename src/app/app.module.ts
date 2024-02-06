@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NavbarComponent,
     WorkExperienceComponent,
     ProjectsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ContactMeComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
